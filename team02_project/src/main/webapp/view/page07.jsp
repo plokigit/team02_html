@@ -6,6 +6,11 @@
 <meta charset="UTF-8">
 <title>호텔 상세보기</title>
 <style type="text/css">
+	#mydiv{
+		width: 1000px;
+		margin: 0px auto;
+	}
+	
    #ho_img{ 
    	float: left; 
    	padding-bottom: 0%;
@@ -66,6 +71,11 @@
 		border: 1px solid black;
 		padding: 8px;
 	}
+	
+	input{
+		background-color: #6d5d95;
+		color : white;
+	}
 </style>
 </head>
 <body>
@@ -75,7 +85,7 @@
       <form method="post">   
          <h2 id="hotel">통일신라 호텔</h2>
          <fieldset>
-         <p id="ho_img"><img src="/images/weston_jo.jpg" alt="image" width="400"></p>
+         <p id="ho_img"><img src="../images/weston_jo.jpg" alt="image" width="400"></p>
          <table>
                <tr>
                   <p id="infor">체크인 : 14:00 ~ 체크아웃 : 11:00</p>
@@ -90,13 +100,13 @@
                </div>
          </table>
          </fieldset>
-         <br>
+         <br><br><br>
          
          <table class="map">
          <!-- * 카카오맵 - 지도퍼가기 -->
 			<!-- 1. 지도 노드 -->
 			<div id="daumRoughmapContainer1624367339604" 
-				class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>
+				class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
 			
 			<!--2. 설치 스크립트
 				* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.-->
@@ -129,9 +139,9 @@
 		</table>
 		<br>
 
-		<fieldset style="border: 1px solid #00000000;">
+		<fieldset style="border: 1px solid #00000000; margin-top: 50px;">
 			<div class="room">
-				<div class="room_i"><img src="/images/room.jpg" alt=""></div>
+				<div class="room_i"><img src="../images/room.jpg" alt=""></div>
 				<button class="room_b">객실 보러가기</button>
 			</div>
 			
@@ -142,7 +152,7 @@
 		            <p><h3 style="margin: 0;">리뷰</h3></p>
 		        </div>
 		     <thead>
-				<tr bgcolor="#dedede">
+				<tr bgcolor="#6d5d95" style="color : white;">
 					<th width="5%">별점</th>
 					<th width="40%">내용</th>
 					<th width="5%">작성자</th>
@@ -159,5 +169,6 @@
          </fieldset>
       </form>
    </div>
+   	<%@include file="footer.jsp" %>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <style type="text/css">
    #log{
       text-align: right;
+      margin-right : 50px;
       font-size: 12px;
    }
    
@@ -20,11 +21,18 @@
    #logo{
    		text-align: center;
    }
+   
+   	a{text-decoration: none;  color : white;}
+   	
+   	button{
+   		background-color: #6d5d95;
+   		color : white;
+   	}
 </style>
 </head>
 <body>
-  <div id="wrap">
-        <div id="log">
+  <div id="wrap" style="background-color: #6d5d95;">
+        <div id="log" style="background-color: #6d5d95;">
            <c:choose>
               <c:when test="${login=='ok' }">
                  @@@님  | 
@@ -37,8 +45,8 @@
            </c:choose>
         </div>
         
-     <p id="logo">
-        <img src="../images/logo_typo.png" alt="image" width="200px">
+     <p id="logo" style="background-color: #6d5d95;">
+        <img src="../images/logo_typo2.png" alt="image" width="200px" style="">
      </p>
   </div>
 </body>

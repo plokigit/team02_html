@@ -8,7 +8,7 @@
 <style type="text/css">
 	legend{margin: auto;}
 	
-	fieldset{width: 1000px; margin: auto;}
+	fieldset{width: 1000px; margin: 0px auto;}
 
 	table.table_h{
 		padding: 0px;
@@ -66,7 +66,7 @@
 					out.println("<table class='table_list'>");
 						out.println("<tr align='center'>");
 							out.println("<td>");
-								out.println("<img src = '/images/weston_jo.jpg' + width='150' height='150' />");
+								out.println("<img src = '../images/weston_jo.jpg' + width='150' height='150' />");
 							out.println("</td>");
 						out.println("</tr>");
 						
@@ -103,6 +103,7 @@
 		</table>
 	</div>
 </fieldset>
+	<%@include file="footer.jsp" %>
     
 </body>
 </html>

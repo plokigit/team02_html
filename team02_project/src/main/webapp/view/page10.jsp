@@ -6,9 +6,18 @@
 <meta charset="UTF-8">
 <title>마이페이지</title>
 <style type="text/css">
-	legend{margin: auto;}
+	h2{
+		text-align: center;
+	}
 	
-	fieldset{width: 50%; margin: auto; margin-top: 30px;}
+	fieldset{
+		width: 700px;
+		margin: auto;
+		margin-bottom: 100px;
+		padding-bottom:100px;
+		border: 0;
+		outline: 0;
+	}
 	
 	table {
 		margin: 10px auto;
@@ -29,18 +38,21 @@
 	}
 	
 	.bg {
-		background-color: #dedede;
+		background-color: #6d5d95;
+		color: white;
 		width: 40%;
+		padding: 10px;
 	}
 	
 	.my_btn{
-		background-color: #DCDCDC;
+		background-color: #6d5d95;
 		padding: 10px;
 		margin-left: 5px;
 		margin-right: 5px;
 		font-size: 15px;
 		border: 0;
 		outline: 0;
+		color : white;
 	}
 	
 	.out{
@@ -64,9 +76,9 @@
 	<%-- 현재 페이지에서 다른 페이지 가져오기  --%>
     <%@ include file="top.jsp"%>
     
+		<div style="margin-top:150px; font-size: 20px;"><h2>마이페이지</h2></div>
     <fieldset>
-         <legend><h2>마이페이지</h2></legend>
-         <table>
+         <table style="margin-top: 20px;">
 			<tr>
 				<th class="bg">아이디</th>
 				<td>아이디</td>
@@ -102,5 +114,7 @@
 			<input class="out" type="button" value="회원탈퇴" onclick="" />
 		</div>
     </fieldset>
+    
+	<%@include file="footer.jsp" %>
 </body>
 </html>
